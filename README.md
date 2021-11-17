@@ -18,3 +18,9 @@ url={https://openreview.net/forum?id=jFMzBeLyTc0}
 ```
 
 For any questions, please contact Kaiwen Yang (kwyang@mail.ustc.edu.cn).
+
+## Requirements
+
+1. [Python](https://www.python.org/)
+2. [Pytorch](https://pytorch.org/)
+3. [Wandb](https://wandb.ai/site)
