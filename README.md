@@ -25,5 +25,5 @@ For any questions, please contact Kaiwen Yang (kwyang@mail.ustc.edu.cn).
 2. [Pytorch](https://pytorch.org/)
 3. [Wandb](https://wandb.ai/site)
 4. [Torchvision](https://pytorch.org/vision/stable/index.html)
-5. [Perceptual_advex](https://github.com/cassidylaidlaw/perceptual-advex)
+5. [Perceptual-advex](https://github.com/cassidylaidlaw/perceptual-advex)
 6. [Robustness](https://github.com/MadryLab/robustness)
