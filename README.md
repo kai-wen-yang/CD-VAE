@@ -4,8 +4,8 @@ Official implementation:
 - Class-Disentanglement and Applications in Adversarial Detection and Defense, NeurIPS 2021. ([Paper](https://openreview.net/pdf?id=jFMzBeLyTc0))
 
 <div align="center">
-  <img src="cd_vae.png" width="500px" />
-  <p>CD-VAE.</p>
+  <img src="cd_vae.png" width="1000px" />
+  <p>CD-VAE</p>
 </div>
 
 ## Citation
