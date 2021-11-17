@@ -1,7 +1,7 @@
 # CD-VAE
 
 Official implementation:
-- Class-Disentanglement and Applications in Adversarial Detection and Defense ([Paper](https://openreview.net/pdf?id=jFMzBeLyTc0))
+- Class-Disentanglement and Applications in Adversarial Detection and Defense, NeurIPS 2021. ([Paper](https://openreview.net/pdf?id=jFMzBeLyTc0))
 
 ## Citation
 
