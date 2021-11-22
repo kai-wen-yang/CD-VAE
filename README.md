@@ -12,13 +12,12 @@ Official implementation:
 
 If you find this repo useful for your research, please consider citing the paper
 ```
-@inproceedings{
-yang2021classdisentanglement,
-title={Class-Disentanglement and Applications in Adversarial Detection and Defense},
-author={Kaiwen Yang and Tianyi Zhou and Yonggang Zhang and Xinmei Tian and Dacheng Tao},
-booktitle={Thirty-Fifth Conference on Neural Information Processing Systems},
-year={2021},
-url={https://openreview.net/forum?id=jFMzBeLyTc0}
+@article{yang2021class,
+  title={Class-Disentanglement and Applications in Adversarial Detection and Defense},
+  author={Yang, Kaiwen and Zhou, Tianyi and Tian, Xinmei and Tao, Dacheng and others},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  year={2021}
 }
 ```
 
