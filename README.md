@@ -83,6 +83,7 @@ python tools/adv_test_cifar.py --model_path ./results/defense_0.1_0.1/robust_mod
 
 ## References
 The code of detection part is based on https://github.com/pokaxpoka/deep_Mahalanobis_detector.
+
 The code of defense part refers to https://github.com/cassidylaidlaw/perceptual-advex and https://github.com/MadryLab/robustness.
 
 ## Citation
