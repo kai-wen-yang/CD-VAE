@@ -21,7 +21,7 @@ For any questions, contact (kwyang@mail.ustc.edu.cn).
 
 ## Pretrained models
 ```
-cd CD-VAE;
+cd CD-VAE
 mkdir pretrained
 ```
 Downloads pretrained models and put them in folder ./pretrained
