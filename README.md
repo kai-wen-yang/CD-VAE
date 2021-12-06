@@ -30,6 +30,10 @@ Downloads pretrained models and put them in folder ./pretrained
 3. [wide_resnet](https://drive.google.com/file/d/1I2yuYQGEYRgqd1oQazq6goDbU2nwUvU_/view?usp=sharing) (trained on clean data x, for initializing adversarial training model)
 
 ## 1. Class-Disentangled VAE
+```
+cd CD-VAE
+python tools/disentangle_cifar.py --save_dir results/disentangle_cifar_ce0.2 --ce 0.2 --optim cosine
+```
 
 ## 2. Adversarial Detection
 
