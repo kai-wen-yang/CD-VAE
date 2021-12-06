@@ -11,6 +11,10 @@ Official implementation:
 For any questions, contact (kwyang@mail.ustc.edu.cn).
 
 ## Pretrained models
+```
+cd CD-VAE;
+mkdir pretrained
+```
 Downloads pretrained models and put them in folder ./pretrained
 1. [cd-vae-1](https://drive.google.com/file/d/1I2yuYQGEYRgqd1oQazq6goDbU2nwUvU_/view?usp=sharing) (gamma=0.2)
 2. [cd-vae-2](https://drive.google.com/file/d/1I2yuYQGEYRgqd1oQazq6goDbU2nwUvU_/view?usp=sharing) (used to initialize adversarial training)
