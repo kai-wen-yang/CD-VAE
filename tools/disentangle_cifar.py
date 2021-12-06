@@ -239,9 +239,9 @@ if __name__ == '__main__':
     parser.add_argument('--alpha', default=2.0, type=float, help='mix up')
     parser.add_argument('--epochs', default=300, type=int, help='training_epochs')
     parser.add_argument('--batch_size', default=256, type=int, help='batch size')
-    parser.add_argument('--dim', default=8, type=int, help='CNN_embed_dim')
+    parser.add_argument('--dim', default=2048, type=int, help='CNN_embed_dim')
     parser.add_argument('--T', default=50, type=int, help='Cosine T')
-    parser.add_argument('--fdim', default=8, type=int, help='featdim')
+    parser.add_argument('--fdim', default=32, type=int, help='featdim')
     parser.add_argument('--step', nargs='+', type=int)
     parser.add_argument('--re', default=1.0, type=float, help='reconstruction weight')
     parser.add_argument('--curriculum', default=True,
