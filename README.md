@@ -34,6 +34,9 @@ Downloads pretrained models and put them in folder ./pretrained
 cd CD-VAE
 python tools/disentangle_cifar.py --save_dir results/disentangle_cifar_ce0.2 --ce 0.2 --optim cosine
 ```
+--ce: Weight of the cross-entropy loss, i.e., gamma in the paper. You can try different values of it (e.g., ce=0.02, 0.2, 2) to control the reconstruction-classification trade-off.
+--save_dir: Folder to save the model checkpoint and training log.
+--optim: Scheduler of learning rate, we support cosine decay and stage decay now.
 
 ## 2. Adversarial Detection
 
