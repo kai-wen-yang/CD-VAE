@@ -40,7 +40,7 @@ python tools/disentangle_cifar.py --save_dir results/disentangle_cifar_ce0.2 --c
 * **--optim** (str): Scheduler of learning rate, we support cosine decay and stage decay now.
 
 ## Part 2. Adversarial Detection
-It needs a CD-VAE model for the adversarial Detection. You can use the pretrained CD-VAE or train a new one by yourself as shown in part 1. The code of this part is based on [MD](https://github.com/pokaxpoka/deep_Mahalanobis_detector).
+It needs a CD-VAE model for the adversarial Detection. You can use the pretrained CD-VAE or train a new one by yourself as shown in part 1.
 ```
 cd CD-VAE/detection
 ```
@@ -81,6 +81,9 @@ python tools/adv_test_cifar.py --model_path ./results/defense_0.1_0.1/robust_mod
 "ReColorAdvAttack(cd_vae, num_iterations=100)"
 ```
 
+## References
+The code of detection part is based on https://github.com/pokaxpoka/deep_Mahalanobis_detector.
+The code of defense part refers to https://github.com/cassidylaidlaw/perceptual-advex and https://github.com/MadryLab/robustness.
 
 ## Citation
 
