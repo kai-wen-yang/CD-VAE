@@ -19,15 +19,19 @@ For any questions, contact (kwyang@mail.ustc.edu.cn).
 5. [Perceptual-advex](https://github.com/cassidylaidlaw/perceptual-advex)
 6. [Robustness](https://github.com/MadryLab/robustness)
 
-## Pretrained models
+## Pretrained Models
 ```
 cd CD-VAE
 mkdir pretrained
 ```
 Downloads pretrained models and put them in folder ./pretrained
-1. [cd-vae-1](https://drive.google.com/file/d/1I2yuYQGEYRgqd1oQazq6goDbU2nwUvU_/view?usp=sharing) (gamma=0.2)
-2. [cd-vae-2](https://drive.google.com/file/d/1I2yuYQGEYRgqd1oQazq6goDbU2nwUvU_/view?usp=sharing) (used to initialize adversarial training)
-3. [wide_resnet](https://drive.google.com/file/d/1I2yuYQGEYRgqd1oQazq6goDbU2nwUvU_/view?usp=sharing) (trained on clean data x, used to initialize adversarial training)
+1. [cd-vae-1](https://drive.google.com/file/d/1I2yuYQGEYRgqd1oQazq6goDbU2nwUvU_/view?usp=sharing) (gamma=0.2, for adversarial detection)
+2. [cd-vae-2](https://drive.google.com/file/d/1I2yuYQGEYRgqd1oQazq6goDbU2nwUvU_/view?usp=sharing) (for initializing adversarial training model)
+3. [wide_resnet](https://drive.google.com/file/d/1I2yuYQGEYRgqd1oQazq6goDbU2nwUvU_/view?usp=sharing) (trained on clean data x, for initializing adversarial training model)
+
+## 1. Class-Disentangled VAE
+
+## 2. Adversarial Detection
 
 ## Citation
 
