@@ -40,7 +40,7 @@ python tools/disentangle_cifar.py --save_dir results/disentangle_cifar_ce0.2 --c
 * **--optim** (str): Scheduler of learning rate, we support cosine decay and stage decay now.
 
 ## Part 2. Adversarial Detection
-We need a CD-VAE model for the adversarial Detection. You can use the pretrained CD-VAE or train a new one by yourself as shown in part 1. The code of this part is based on [MD](https://github.com/pokaxpoka/deep_Mahalanobis_detector).
+It needs a CD-VAE model for the adversarial Detection. You can use the pretrained CD-VAE or train a new one by yourself as shown in part 1. The code of this part is based on [MD](https://github.com/pokaxpoka/deep_Mahalanobis_detector).
 ```
 cd CD-VAE/detection
 ```
@@ -61,7 +61,7 @@ python ADV_Regression_Subspace.py --net_type resnet --outf ./data/cd-vae-1/;
 * **--vae_path** (str): CD-VAE checkpoint.
 
 ## Part 3. White-box Adversarial Defense
-Modified adversarial training based on CD-VAE. We need a CD-VAE model and a model trained on clean data x to initialize.
+Modified adversarial training based on CD-VAE(it needs a CD-VAE model and a model trained on clean data x to initialize):
 ```
 cd CD-VAE
 python tools/adv_train_cifar.py --batch_size 100 --lr 0.1 --cr 0.1 --cg 0.1 --save_dir ./results/defense_0.1_0.1
@@ -69,6 +69,7 @@ python tools/adv_train_cifar.py --batch_size 100 --lr 0.1 --cr 0.1 --cg 0.1 --sa
 * **--cr, --cg** (float): Weight of the cross-entropy loss, i.e., gamma in the paper.
 * **--lr** (float): Learning rate.
 * **--save_dir** (float): Directory to save checkpoints and log.
+
 Evaluation of the model under various white-box attack:
 ```
 python tools/adv_test_cifar.py --model_path ./results/defense_0.1_0.1/robust_model_g_epoch82.pth --vae_path ./results/defense_0.1_0.1/robust_vae_epoch82.pth --batch_size 256 \
