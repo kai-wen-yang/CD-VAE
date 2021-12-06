@@ -21,7 +21,7 @@ If you find this repo useful for your research, please consider citing the paper
 }
 ```
 
-For any questions, please contact Kaiwen Yang (kwyang@mail.ustc.edu.cn).
+For any questions, contact (kwyang@mail.ustc.edu.cn).
 
 ## Requirements
 
