@@ -56,7 +56,7 @@ Evaluate the Mahalanobis Estimator
 ```
 python ADV_Regression_Subspace.py --net_type resnet --outf ./data/cd-vae-1/;
 ```
-* **--adv_type** (str): Adversarial attack, e.g., FGSM, BIM, PGD, PGD-L2, CW-L2. 
+* **--adv_type** (str): Adversarial attack, e.g., FGSM, BIM, PGD, PGD-L2, CW. 
 * **--outf** (str): Directory to save data and results.
 * **--vae_path** (str): CD-VAE checkpoint.
 
