@@ -70,7 +70,7 @@ python tools/adv_train_cifar.py --batch_size 100 --lr 0.1 --cr 0.1 --cg 0.1 --sa
 * **--lr** (float): Learning rate.
 * **--save_dir** (float): Directory to save checkpoints and log.
 
-Evaluation of the trained model under various white-box attack:
+Evaluation of the trained model against various white-box attack:
 ```
 python tools/adv_test_cifar.py --model_path ./results/defense_0.1_0.1/robust_model_g_epoch82.pth --vae_path ./results/defense_0.1_0.1/robust_vae_epoch82.pth --batch_size 256 \
 "NoAttack()" \
