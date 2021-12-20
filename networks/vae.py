@@ -220,7 +220,7 @@ class CVAE_cifar(AbstractAutoEncoder):
         xi = self.xi_bn(xi)
 
         if self.with_classifier:
-            out = self.classifier(x - xi, dim=0)
+            out = self.classifier(x - xi)
             return out, hi, xi, mu, logvar
         else:
             return xi
