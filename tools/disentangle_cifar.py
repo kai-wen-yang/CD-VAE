@@ -36,7 +36,7 @@ def reconst_images(epoch=2, batch_size=64, batch_num=2, dataloader=None, model=N
                 break
             else:
                 X, y = X.cuda(), y.cuda().view(-1, )
-                _,_,_,_, gx, _, _ = model(X)
+                _,_, gx, _, _ = model(X)
 
                 grid_X = torchvision.utils.make_grid(X[:batch_size].data, nrow=8, padding=2, normalize=True)
                 wandb.log({"_Batch_{batch}_X.jpg".format(batch=batch_idx): [
@@ -140,7 +140,6 @@ def train(args, epoch, model, optimizer, trainloader):
         loss_avg.update(loss.data.item(), bs)
         loss_rec.update(l1.data.item(), bs)
         loss_ce.update(cross_entropy.data.item(), bs)
-        loss_entropy.update(entropy.data.item(), bs)
         loss_kl.update(l3.data.item(), bs)
         top1.update(prec1.item(), bs)
 
@@ -148,7 +147,6 @@ def train(args, epoch, model, optimizer, trainloader):
         wandb.log({'loss': loss_avg.avg, \
                    'loss_rec': loss_rec.avg, \
                    'loss_ce': loss_ce.avg, \
-                   'loss_entropy': loss_entropy.avg, \
                    'loss_kl': loss_kl.avg, \
                    'acc': top1.avg,
                    're_weight': re,
