@@ -11,8 +11,6 @@ from torch import nn
 from torch.nn import init
 from torch.nn import functional as F
 from torch.autograd import Variable
-from .resnet import resnet50
-from .nearest_embed import NearestEmbed
 import pdb
 import sys
 sys.path.append('.')

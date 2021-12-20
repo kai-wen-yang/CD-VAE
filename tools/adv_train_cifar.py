@@ -11,7 +11,7 @@ import datetime
 from torch.autograd import Variable
 import pdb
 import sys
-
+import torch.optim as optim
 sys.path.append('.')
 
 from networks.adv_vae import *
@@ -69,7 +69,7 @@ if __name__ == '__main__':
     parser.add_argument('--cr', default=1.0, type=float, help='cross entropy weight')
     parser.add_argument('--cg', default=1.0, type=float, help='cross entropy weight')
     parser.add_argument("--model_path", type=str, default="./pretrained/wide_resnet.pth")
-    parser.add_argument("--vae_path", type=str, default="./pretrained/cdvae2.pth")
+    parser.add_argument("--vae_path", type=str, default="./pretrained/cd-vae-2.pth")
     parser.add_argument('--clip_grad', type=float, default=1.0,
                         help='clip gradients to this value')
     args = parser.parse_args()

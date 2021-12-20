@@ -20,10 +20,8 @@ import sys
 
 sys.path.append('.')
 
-from aa.networks import *
-import aa.config as cf
+from networks import *
 from utils.set import *
-from utils.randaugment4fixmatch import RandAugmentMC
 from utils.normalize import *
 from advex.attacks import *
 normalize = CIFARNORMALIZE(32)
