@@ -13,6 +13,8 @@ from torch.nn import functional as F
 from torch.autograd import Variable
 import pdb
 import sys
+from .resnet import resnet50
+from .nearest_embed import NearestEmbed
 sys.path.append('.')
 sys.path.append('..')
 from utils.normalize import *
