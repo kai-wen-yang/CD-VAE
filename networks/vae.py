@@ -285,6 +285,6 @@ class CVAE_imagenet(nn.Module):
 
         l = self.decode(z_q)
         gx = self.L_bn(l)
-        out = self.classifier(x-xi)
+        out = self.classifier(x-gx)
 
         return  out, gx, z_e, emb
