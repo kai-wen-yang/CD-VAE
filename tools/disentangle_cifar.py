@@ -70,13 +70,13 @@ def test(epoch, model, testloader):
             acc_gx = 1 - F.mse_loss(torch.div(gx, norm.unsqueeze(1).unsqueeze(2).unsqueeze(3)), \
                                     torch.div(x, norm.unsqueeze(1).unsqueeze(2).unsqueeze(3)), \
                                     reduction='sum') / 100
-            acc_xd = 1 - F.mse_loss(torch.div(x - gx, norm.unsqueeze(1).unsqueeze(2).unsqueeze(3)), \
+            acc_rx = 1 - F.mse_loss(torch.div(x - gx, norm.unsqueeze(1).unsqueeze(2).unsqueeze(3)), \
                                     torch.div(x, norm.unsqueeze(1).unsqueeze(2).unsqueeze(3)), \
                                     reduction='sum') / 100
 
             acc_avg.update(acc_gx.data.item(), bs)
             # measure accuracy and record loss
-            sparse_avg.update(acc_xd.data.item(), bs)
+            sparse_avg.update(acc_rx.data.item(), bs)
             # measure accuracy and record loss
             prec1, _, _, _ = accuracy(out.data, y.data, topk=(1, 5))
             top1.update(prec1.item(), bs)
