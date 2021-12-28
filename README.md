@@ -26,8 +26,8 @@ mkdir pretrained
 ```
 Download pretrained models and put them in directory ./pretrained
 1. [cd-vae-1](https://drive.google.com/file/d/1I2yuYQGEYRgqd1oQazq6goDbU2nwUvU_/view?usp=sharing) (for adversarial detection)
-2. [cd-vae-2](https://drive.google.com/file/d/1I2yuYQGEYRgqd1oQazq6goDbU2nwUvU_/view?usp=sharing) (for initializing adversarial training model)
-3. [wide_resnet](https://drive.google.com/file/d/1I2yuYQGEYRgqd1oQazq6goDbU2nwUvU_/view?usp=sharing) (trained on clean data x, for initializing adversarial training model)
+2. [cd-vae-2](https://drive.google.com/file/d/1Lycbl4BUTxBzfTsLjj-m-_jnpDl8pCcP/view?usp=sharing) (for initializing adversarial training model)
+3. [wide_resnet](https://drive.google.com/file/d/1Lycbl4BUTxBzfTsLjj-m-_jnpDl8pCcP/view?usp=sharing) (trained on clean data x, for initializing adversarial training model)
 
 ## Part 1. Class-Disentangled VAE
 Train a class-disentangled VAE, which is the basis of adversarial detection and defense.
