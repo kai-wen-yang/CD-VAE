@@ -64,7 +64,7 @@ python ADV_Regression_Subspace.py --net_type resnet --outf ./data/cd-vae-1/;
 Modified adversarial training based on CD-VAE(it needs a CD-VAE model and a model trained on clean data x to initialize):
 ```
 cd CD-VAE
-python tools/adv_train_cifar.py --batch_size 100 --lr 0.1 --cr 0.1 --cg 0.1 --save_dir ./results/defense_0.1_0.1
+python tools/adv_train_cifar.py --batch_size 100 --lr 1 --cr 0.1 --cg 0.1 --margin 20 --save_dir ./results/defense_0.1_0.1
 ```
 * **--cr, --cg** (float): Weight of the cross-entropy loss, i.e., gamma in the paper.
 * **--lr** (float): Learning rate.
