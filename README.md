@@ -26,7 +26,7 @@ mkdir pretrained
 ```
 Download pretrained models and put them in directory ./pretrained
 1. [cd-vae-1](https://drive.google.com/file/d/1I2yuYQGEYRgqd1oQazq6goDbU2nwUvU_/view?usp=sharing) (for adversarial detection)
-2. [cd-vae-2](https://drive.google.com/file/d/1Lycbl4BUTxBzfTsLjj-m-_jnpDl8pCcP/view?usp=sharing) (for initializing adversarial training model)
+2. [cd-vae-2](https://drive.google.com/file/d/1b-S2BvHhV79t89M1oINyKvn_BaxYprib/view?usp=sharing) (for initializing adversarial training model)
 3. [wide_resnet](https://drive.google.com/file/d/1Lycbl4BUTxBzfTsLjj-m-_jnpDl8pCcP/view?usp=sharing) (trained on clean data x, for initializing adversarial training model)
 
 ## Part 1. Class-Disentangled VAE
@@ -72,7 +72,7 @@ python tools/adv_train_cifar.py --batch_size 100 --lr 1 --cr 0.1 --cg 0.1 --marg
 
 Evaluation of the trained model against various white-box attack:
 ```
-python tools/adv_test_cifar.py --model_path ./results/defense_0.1_0.1/robust_model_g_epoch82.pth --vae_path ./results/defense_0.1_0.1/robust_vae_epoch82.pth --batch_size 256 \
+python tools/adv_test_cifar.py --model_path ./results/defense_0.1_0.1/robust_model_g_epoch92.pth --vae_path ./results/defense_0.1_0.1/robust_vae_epoch92.pth --batch_size 256 \
 "NoAttack()" \
 "AutoLinfAttack(cd_vae, 'cifar', bound=8/255)" \
 "AutoL2Attack(cd_vae, 'cifar', bound=1.0)" \
